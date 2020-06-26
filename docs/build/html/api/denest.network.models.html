@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.network.models &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.network.recorders" href="denest.network.recorders.html" />
+    <link rel="prev" title="denest.network.layers" href="denest.network.layers.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+          <li><a href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.network.models.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.network.models">
+<span id="denest-network-models"></span><h1><a class="reference internal" href="#module-denest.network.models" title="denest.network.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a><a class="headerlink" href="#module-denest.network.models" title="Permalink to this headline">¶</a></h1>
+<p>NEST model classes.</p>
+<dl class="py class">
+<dt id="denest.network.models.Model">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.models.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.models.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.NestObject" title="denest.base_object.NestObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.NestObject</span></code></a></p>
+<p>Represent a model in NEST.</p>
+<p>During creation, we copy or change the default parameters of the
+<code class="docutils literal notranslate"><span class="pre">nest_model</span></code> NEST model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the model</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <cite>params</cite> of the object. Should countain the
+<cite>nest_model</cite> key.</p></li>
+<li><p><strong>nest_params</strong> (<em>dict-like</em>) – Dictionary passed to NEST during the
+<code class="docutils literal notranslate"><span class="pre">nest.CopyModel</span></code> of <code class="docutils literal notranslate"><span class="pre">nest.SetDefaults</span></code> call.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.models.Model.RESERVED_PARAMS">
+<code class="sig-name descname">RESERVED_PARAMS</code><em class="property"> = []</em><a class="headerlink" href="#denest.network.models.Model.RESERVED_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.models.Model.MANDATORY_PARAMS">
+<code class="sig-name descname">MANDATORY_PARAMS</code><em class="property"> = ['nest_model']</em><a class="headerlink" href="#denest.network.models.Model.MANDATORY_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.models.Model.OPTIONAL_PARAMS">
+<code class="sig-name descname">OPTIONAL_PARAMS</code><em class="property"> = {}</em><a class="headerlink" href="#denest.network.models.Model.OPTIONAL_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.models.Model.RESERVED_NEST_PARAMS">
+<code class="sig-name descname">RESERVED_NEST_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.models.Model.RESERVED_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.models.Model.MANDATORY_NEST_PARAMS">
+<code class="sig-name descname">MANDATORY_NEST_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.models.Model.MANDATORY_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.models.Model.OPTIONAL_NEST_PARAMS">
+<code class="sig-name descname">OPTIONAL_NEST_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.models.Model.OPTIONAL_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.models.Model.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.models.Model.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create or update the NEST model represented by this object.</p>
+<p>If the name of the base nest model and of the model to be created are
+the same, update (change defaults) rather than copy the base nest
+model.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.models.SynapseModel">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.models.</code><code class="sig-name descname">SynapseModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.models.SynapseModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.models.Model" title="denest.network.models.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.models.Model</span></code></a></p>
+<p>Represents a NEST synapse.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the model</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <p><cite>params</cite> of the object. Should countain the
+<cite>nest_model</cite> key. The following keys are recognized:</p>
+<blockquote>
+<div><ul>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">receptor_type</span></code>, <code class="docutils literal notranslate"><span class="pre">target_neuron</span></code> (str): Name of the</dt><dd><p>receptor type (eg “AMPA”) and of the target neuron for
+synapses of this type. If specified, the <cite>receptor_type</cite>
+NEST parameter (which is an integer) is automatically set
+from the defaults of the target neuron.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>nest_params</strong> (<em>dict-like</em>) – Dictionary passed to NEST during the
+<code class="docutils literal notranslate"><span class="pre">nest.CopyModel</span></code> of <code class="docutils literal notranslate"><span class="pre">nest.SetDefaults</span></code> call. The <code class="docutils literal notranslate"><span class="pre">weight</span></code>
+parameter, which sets the synapse model’s default weight is
+reserved. To set the strength of projections, set the <code class="docutils literal notranslate"><span class="pre">weights</span></code>
+parameter of <code class="docutils literal notranslate"><span class="pre">projection</span></code> objects instead.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>..note::</dt><dd><p>NEST expects ‘receptor_type’ to be an integer rather than a string. The
+integer index must be found in the defaults of the target neuron.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.models.SynapseModel.RESERVED_NEST_PARAMS">
+<code class="sig-name descname">RESERVED_NEST_PARAMS</code><em class="property"> = ['weight']</em><a class="headerlink" href="#denest.network.models.SynapseModel.RESERVED_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.network.recorders.html" class="btn btn-neutral float-right" title="denest.network.recorders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.network.layers.html" class="btn btn-neutral float-left" title="denest.network.layers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

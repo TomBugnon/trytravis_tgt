@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.network.projections &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.network.layers" href="denest.network.layers.html" />
+    <link rel="prev" title="denest.network" href="denest.network.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+          <li><a href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.network.projections.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.network.projections">
+<span id="denest-network-projections"></span><h1><a class="reference internal" href="#module-denest.network.projections" title="denest.network.projections"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a><a class="headerlink" href="#module-denest.network.projections" title="Permalink to this headline">¶</a></h1>
+<p>projectionModel and projection objects.</p>
+<dl class="py class">
+<dt id="denest.network.projections.projectionModel">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.projections.</code><code class="sig-name descname">projectionModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.projectionModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.NestObject" title="denest.base_object.NestObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.NestObject</span></code></a></p>
+<p>Represent a NEST projection model.</p>
+<p>projection objects inherit <code class="docutils literal notranslate"><span class="pre">nest_params</span></code> and <code class="docutils literal notranslate"><span class="pre">params</span></code> attributes from
+projectionModel objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the projection model.</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <p>Dictionary of parameters. The following parameters
+are recognized:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>type (str): Type of projection. Currently, only projections of</dt><dd><p>type ‘topological’ are supported</p>
+</dd>
+</dl>
+</div></blockquote>
+</p></li>
+<li><p><strong>nest_params</strong> (<em>dict-like</em>) – Dictionary of parameters that will be passed
+to NEST during the <code class="docutils literal notranslate"><span class="pre">tp.ConnectLayer</span></code> call. The following
+parameters are mandatory: <code class="docutils literal notranslate"><span class="pre">['synapse_model'</span></code>. The <code class="docutils literal notranslate"><span class="pre">sources</span></code> and
+<code class="docutils literal notranslate"><span class="pre">targets</span></code> NEST parameters are reserved. The source and target
+populations are set by <code class="docutils literal notranslate"><span class="pre">projection</span></code> objects via the
+<code class="docutils literal notranslate"><span class="pre">source_population</span></code> and <code class="docutils literal notranslate"><span class="pre">target_population</span></code> projection
+parameters.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.RESERVED_PARAMS">
+<code class="sig-name descname">RESERVED_PARAMS</code><em class="property"> = []</em><a class="headerlink" href="#denest.network.projections.projectionModel.RESERVED_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.MANDATORY_PARAMS">
+<code class="sig-name descname">MANDATORY_PARAMS</code><em class="property"> = []</em><a class="headerlink" href="#denest.network.projections.projectionModel.MANDATORY_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.OPTIONAL_PARAMS">
+<code class="sig-name descname">OPTIONAL_PARAMS</code><em class="property"> = {'type': 'topological'}</em><a class="headerlink" href="#denest.network.projections.projectionModel.OPTIONAL_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.RESERVED_NEST_PARAMS">
+<code class="sig-name descname">RESERVED_NEST_PARAMS</code><em class="property"> = ['sources', 'targets']</em><a class="headerlink" href="#denest.network.projections.projectionModel.RESERVED_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.MANDATORY_NEST_PARAMS">
+<code class="sig-name descname">MANDATORY_NEST_PARAMS</code><em class="property"> = ['synapse_model', 'connection_type']</em><a class="headerlink" href="#denest.network.projections.projectionModel.MANDATORY_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.projections.projectionModel.OPTIONAL_NEST_PARAMS">
+<code class="sig-name descname">OPTIONAL_NEST_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.projections.projectionModel.OPTIONAL_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.projections.projectionModel.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#denest.network.projections.projectionModel.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.projections.Baseprojection">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.projections.</code><code class="sig-name descname">Baseprojection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">source_layer</span></em>, <em class="sig-param"><span class="n">source_population</span></em>, <em class="sig-param"><span class="n">target_layer</span></em>, <em class="sig-param"><span class="n">target_population</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.Baseprojection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.NestObject" title="denest.base_object.NestObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.NestObject</span></code></a></p>
+<p>Base class for all population-to-population projections.</p>
+<p>A projection consists in synapses between two populations that have a
+specific projection model. Population-to-population projections are
+specified in the <code class="docutils literal notranslate"><span class="pre">projections</span></code> network/topology parameter. projection
+models are specified in the <code class="docutils literal notranslate"><span class="pre">projection_models</span></code> network parameter.</p>
+<p><code class="docutils literal notranslate"><span class="pre">(&lt;projection_model_name&gt;,</span> <span class="pre">&lt;source_layer_name&gt;,</span> <span class="pre">&lt;source_population_name&gt;,</span>
+<span class="pre">&lt;target_layer_name&gt;,</span> <span class="pre">&lt;target_population_name&gt;)</span></code> tuples fully specify each
+individual projection and should be unique. Refer to
+<code class="docutils literal notranslate"><span class="pre">Network.build_projections</span></code> for a description of how these arguments are
+parsed.</p>
+<p>projection weights can be recorded by ‘weight_recorder’ devices,
+represented by projectionRecorder objects. Because the weight recorder
+device’s GID must be specified in a synapse model’s default parameters
+(using nest.SetDefaults or nest.CopyModel), the actual NEST synapse model
+used by a projection (<cite>self.nest_synapse_model</cite>) might be different from the
+one specified in the projection’s parameters (<cite>self.base_synapse_model</cite>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<code class="docutils literal notranslate"><span class="pre">projectionModel</span></code>) – and <code class="docutils literal notranslate"><span class="pre">nest_params</span></code> parameter dictionaries are inherited from the
+<code class="docutils literal notranslate"><span class="pre">projectionModel</span></code> object.</p></li>
+<li><p><strong>target_layer</strong> (<em>source_layer</em><em>,</em>) – source and target Layer object</p></li>
+<li><p><strong>target_population</strong> (<em>source_population</em><em>,</em>) – Name of the
+source and target population. If None, all populations are used.
+Wrapper for the <code class="docutils literal notranslate"><span class="pre">sources</span></code> and <code class="docutils literal notranslate"><span class="pre">targets</span></code> <code class="docutils literal notranslate"><span class="pre">nest.ConnectLayers</span></code>
+parameters.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Initialize projection object.</p>
+<dl class="py method">
+<dt id="denest.network.projections.Baseprojection.base_synapse_model">
+<em class="property">property </em><code class="sig-name descname">base_synapse_model</code><a class="headerlink" href="#denest.network.projections.Baseprojection.base_synapse_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return synapse model specified in projection’s model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.projections.Baseprojection.nest_synapse_model">
+<em class="property">property </em><code class="sig-name descname">nest_synapse_model</code><a class="headerlink" href="#denest.network.projections.Baseprojection.nest_synapse_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return synapse model used in NEST for this projection.</p>
+<p>May differ from self.base_synapse_model to allow recording to a
+weight_recorder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.projections.Baseprojection.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.Baseprojection.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the projections in NEST and the projection recorders.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.projections.Baseprojection.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.Baseprojection.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.projections.Topoprojection">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.projections.</code><code class="sig-name descname">Topoprojection</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.Topoprojection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.projections.Baseprojection" title="denest.network.projections.Baseprojection"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.projections.Baseprojection</span></code></a></p>
+<p>Represent a topological projection.</p>
+<p>Initialize projection object.</p>
+<dl class="py method">
+<dt id="denest.network.projections.Topoprojection.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.projections.Topoprojection.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the projections in NEST using <code class="docutils literal notranslate"><span class="pre">tp.ConnectLayers</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.network.layers.html" class="btn btn-neutral float-right" title="denest.network.layers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.network.html" class="btn btn-neutral float-left" title="denest.network" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

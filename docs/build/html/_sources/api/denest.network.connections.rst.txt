@@ -1,0 +1,7 @@
+:mod:`denest.network.projections`
+=================================
+
+.. automodule:: denest.network.projections
+   :members:
+   :undoc-members:
+   :show-inheritance:

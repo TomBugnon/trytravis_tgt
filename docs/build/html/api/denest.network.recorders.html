@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.network.recorders &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.network.utils" href="denest.network.utils.html" />
+    <link rel="prev" title="denest.network.models" href="denest.network.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+          <li><a href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.network.recorders.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.network.recorders">
+<span id="denest-network-recorders"></span><h1><a class="reference internal" href="#module-denest.network.recorders" title="denest.network.recorders"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a><a class="headerlink" href="#module-denest.network.recorders" title="Permalink to this headline">¶</a></h1>
+<p>PopulationRecorder and projectionRecorder objects.</p>
+<dl class="py class">
+<dt id="denest.network.recorders.BaseRecorder">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.recorders.</code><code class="sig-name descname">BaseRecorder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.NestObject" title="denest.base_object.NestObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.NestObject</span></code></a></p>
+<p>Base class for all recorder classes. Represent nodes (not models).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>str</em>) – Model of the recorder in NEST. This should be a native
+model in NEST, or a recorder model defined via <code class="docutils literal notranslate"><span class="pre">recorder_models</span></code>
+network parameters.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.model">
+<em class="property">property </em><code class="sig-name descname">model</code><a class="headerlink" href="#denest.network.recorders.BaseRecorder.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return NEST model of recorder node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.gid">
+<em class="property">property </em><code class="sig-name descname">gid</code><a class="headerlink" href="#denest.network.recorders.BaseRecorder.gid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return gid of node as tuple.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.variables">
+<em class="property">property </em><code class="sig-name descname">variables</code><a class="headerlink" href="#denest.network.recorders.BaseRecorder.variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return recorder’s <cite>record_from</cite>. “spikes” for spike detectors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#denest.network.recorders.BaseRecorder.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return type of recorder (‘spike_detector’, ‘multimeter’, …)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.set_status">
+<code class="sig-name descname">set_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.set_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call nest.SetStatus on node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.set_label">
+<code class="sig-name descname">set_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.set_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set self._label and node’s NEST <code class="docutils literal notranslate"><span class="pre">label</span></code> from self.__str__.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.raw_data_colnames">
+<code class="sig-name descname">raw_data_colnames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.raw_data_colnames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return column names of raw data files for pandas loading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.raw_data_filenames">
+<code class="sig-name descname">raw_data_filenames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.raw_data_filenames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return filenames of raw data files saved by NEST.</p>
+<p>From NEST documentation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```The name of the output file is
+`data_path/data_prefix(label|model_name)-gid-vp.file_extension`
+
+See /label and /file_extension for how to change the name.
+/data_prefix is changed in the root node.```
+</pre></div>
+</div>
+<p>NB: We don’t use the recorder’s <cite>filenames</cite> key, since it is created
+only after the first <cite>Simulate</cite> call.</p>
+<p>NB: There is one file per virtual process. The virtual processes are
+numeroted from 0 and formatted with the same number of digits as that of
+the number of virtual processes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.get_base_metadata_dict">
+<code class="sig-name descname">get_base_metadata_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.get_base_metadata_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return metadata dict common to all recorder types.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.BaseRecorder.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.BaseRecorder.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save metadata for recorder.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.recorders.PopulationRecorder">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.recorders.</code><code class="sig-name descname">PopulationRecorder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">layer</span></em>, <em class="sig-param"><span class="n">population_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.PopulationRecorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.recorders.BaseRecorder" title="denest.network.recorders.BaseRecorder"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.recorders.BaseRecorder</span></code></a></p>
+<p>Represent a recorder node. Connects to a single population.</p>
+<p>Handles creating and connecting the recorder node to the recorder
+population, and saving the recorder’s output metadata, which contains
+population and layer information (population shape, unit locations, etc).</p>
+<p>PopulationRecorder objects are specified in the <cite>population_recorders</cite>
+parameters at network/recorders. Recorder models can be specified separately
+in the <cite>recorder_models</cite> parameters at network/recorders.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>str</em>) – Model of the recorder in NEST. This should be a native
+model in NEST, or a recorder model defined via <code class="docutils literal notranslate"><span class="pre">recorder_models</span></code>
+network parameters. (eg: ‘multimeter’ or ‘modified_multimeter’)</p></li>
+<li><p><strong>layer</strong> (<a class="reference internal" href="denest.network.layers.html#denest.network.layers.Layer" title="denest.network.layers.Layer"><em>Layer</em></a>) – Layer object</p></li>
+<li><p><strong>population_name</strong> (<em>str</em>) – Name of population to connect to.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Initialize PopulationRecorder object.</p>
+<dl class="py attribute">
+<dt id="denest.network.recorders.PopulationRecorder.POP_RECORDER_TYPES">
+<code class="sig-name descname">POP_RECORDER_TYPES</code><em class="property"> = ['multimeter', 'spike_detector']</em><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.POP_RECORDER_TYPES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.gids">
+<em class="property">property </em><code class="sig-name descname">gids</code><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.gids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of GIDs of recorded units.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.locations">
+<em class="property">property </em><code class="sig-name descname">locations</code><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <code class="docutils literal notranslate"><span class="pre">{&lt;gid&gt;:</span> <span class="pre">(&lt;row&gt;,</span> <span class="pre">&lt;col&gt;,</span> <span class="pre">&lt;unit_i&gt;)}</span></code> for recorded units.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.population_name">
+<em class="property">property </em><code class="sig-name descname">population_name</code><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.population_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return name of population the recorder is connected to.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.layer_name">
+<em class="property">property </em><code class="sig-name descname">layer_name</code><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.layer_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return name of layer the recorder is connected to.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the PopulationRecorder node</p>
+<ol class="arabic simple">
+<li><p>Create the recorder node in NEST</p></li>
+<li><dl class="simple">
+<dt>Update PopulationRecorder’s attributes from the Layer object and</dt><dd><p>the node in NEST</p>
+</dd>
+</dl>
+</li>
+<li><p>Connect the node to the target GIDs.</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.get_population_recorder_metadata_dict">
+<code class="sig-name descname">get_population_recorder_metadata_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.get_population_recorder_metadata_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create population recorder metadata dict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save population recorder metadata.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.PopulationRecorder.raw_data_colnames">
+<code class="sig-name descname">raw_data_colnames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.PopulationRecorder.raw_data_colnames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of labels for columns in raw data saved by NEST.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.recorders.projectionRecorder">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.recorders.</code><code class="sig-name descname">projectionRecorder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">projection</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.projectionRecorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.recorders.BaseRecorder" title="denest.network.recorders.BaseRecorder"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.recorders.BaseRecorder</span></code></a></p>
+<p>Represents a recorder connected to synapses of a <code class="docutils literal notranslate"><span class="pre">projection</span></code>.</p>
+<p>projectionRecorders are connected to synapses of a single
+population-to-population <code class="docutils literal notranslate"><span class="pre">projection</span></code> object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>str</em>) – Model of the projection recorder in NEST. This should be a
+native model in NEST, or a recorder model defined via
+<code class="docutils literal notranslate"><span class="pre">recorder_models</span></code> network parameters. (eg: ‘weight_recorder’)</p></li>
+<li><p><strong>projection</strong> (<code class="docutils literal notranslate"><span class="pre">projection</span></code>) – connected to.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.recorders.projectionRecorder.projection_RECORDER_TYPES">
+<code class="sig-name descname">projection_RECORDER_TYPES</code><em class="property"> = ['weight_recorder']</em><a class="headerlink" href="#denest.network.recorders.projectionRecorder.projection_RECORDER_TYPES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.projectionRecorder.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.projectionRecorder.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the projectionRecorder and update projection object.</p>
+<ol class="arabic simple">
+<li><p>Create the recorder node in NEST.</p></li>
+<li><dl class="simple">
+<dt>Modify the synapse model of the projection object is modified so</dt><dd><p>that it sends spikes to the projectionRecorder object.</p>
+</dd>
+</dl>
+</li>
+<li><p>Update projectionRecorder’s attributes.</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.projectionRecorder.get_projection_recorder_metadata_dict">
+<code class="sig-name descname">get_projection_recorder_metadata_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.projectionRecorder.get_projection_recorder_metadata_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create metadata directory for projectionRecorder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.projectionRecorder.raw_data_colnames">
+<code class="sig-name descname">raw_data_colnames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.projectionRecorder.raw_data_colnames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return column names of raw data files for pandas loading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.recorders.projectionRecorder.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.recorders.projectionRecorder.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save recorder metadata.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.network.utils.html" class="btn btn-neutral float-right" title="denest.network.utils" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.network.models.html" class="btn btn-neutral float-left" title="denest.network.models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

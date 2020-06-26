@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.session &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.simulation" href="denest.simulation.html" />
+    <link rel="prev" title="denest.parameters" href="denest.parameters.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.session.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.session">
+<span id="denest-session"></span><h1><a class="reference internal" href="#module-denest.session" title="denest.session"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a><a class="headerlink" href="#module-denest.session" title="Permalink to this headline">¶</a></h1>
+<p>Represent a sequence of stimuli.</p>
+<dl class="py class">
+<dt id="denest.session.Session">
+<em class="property">class </em><code class="sig-prename descclassname">denest.session.</code><code class="sig-name descname">Session</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">start_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input_dir</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.ParamObject" title="denest.base_object.ParamObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.ParamObject</span></code></a></p>
+<p>Represents a sequence of stimuli.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the session</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <p>Dictionary specifying session parameters. The
+following keys are recognized:</p>
+<blockquote>
+<div><ul>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">simulation_time</span></code> (float): Duration of the session in ms.</dt><dd><p>(mandatory)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">reset_network</span></code> (bool): If true, <code class="docutils literal notranslate"><span class="pre">nest.ResetNetwork()</span></code> is</dt><dd><p>called during session initialization (default <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">record</span></code> (bool): If false, the <code class="docutils literal notranslate"><span class="pre">start_time</span></code> field of</dt><dd><p>recorder nodes in NEST is set to the end time of the
+session, so that no data is recorded during the session
+(default <code class="docutils literal notranslate"><span class="pre">True</span></code>)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">shift_origin</span></code> (bool): If True, the <code class="docutils literal notranslate"><span class="pre">origin</span></code> flag of the</dt><dd><p>stimulation devices of all the network’s <code class="docutils literal notranslate"><span class="pre">InputLayer</span></code>
+layers is set to the start of the session during
+initialization. Useful to repeat sessions when the
+stimulators are eg spike generators.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">unit_changes</span></code> (list): List describing the changes applied</dt><dd><p>to certain units before the start of the session.
+Passed to <code class="docutils literal notranslate"><span class="pre">Network.set_state</span></code>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">synapse_changes</span></code> (list): List describing the changes</dt><dd><p>applied to certain synapses before the start of the session.
+Passed to <code class="docutils literal notranslate"><span class="pre">Network.set_state</span></code>. Refer to that
+method for a description of how <code class="docutils literal notranslate"><span class="pre">synapse_changes</span></code> is
+formatted and interpreted. No changes happen if empty.
+(default [])</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>start_time (float): Time of kernel in ms when the session starts</dt><dd><p>running.</p>
+</dd>
+<dt>input_dir (str): Path to the directory in which input files are searched</dt><dd><p>for for each session.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.session.Session.RESERVED_PARAMS">
+<code class="sig-name descname">RESERVED_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.session.Session.RESERVED_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.session.Session.MANDATORY_PARAMS">
+<code class="sig-name descname">MANDATORY_PARAMS</code><em class="property"> = ['simulation_time']</em><a class="headerlink" href="#denest.session.Session.MANDATORY_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.session.Session.OPTIONAL_PARAMS">
+<code class="sig-name descname">OPTIONAL_PARAMS</code><em class="property"> = {'record': True, 'reset_network': False, 'shift_origin': False, 'synapse_changes': [], 'unit_changes': []}</em><a class="headerlink" href="#denest.session.Session.OPTIONAL_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.end">
+<em class="property">property </em><code class="sig-name descname">end</code><a class="headerlink" href="#denest.session.Session.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return kernel time at session’s end.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.start">
+<em class="property">property </em><code class="sig-name descname">start</code><a class="headerlink" href="#denest.session.Session.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return kernel time at session’s start.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.initialize">
+<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">network</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize session.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Reset Network (<cite>reset_network</cite> parameter)</p></li>
+<li><p>Inactivate recorders (<cite>record</cite> parameter)</p></li>
+<li><dl class="simple">
+<dt>Shift stimulator devices ‘origin’ flag to start of session</dt><dd><p>(<cite>shift_origin</cite> parameter)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Change network’s dynamic variables by calling the</dt><dd><p><cite>Network.set_state</cite> function (<cite>unit_changes</cite> and
+<cite>synapse_changes</cite> parameter)</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="denest.html#denest.Session" title="denest.Session"><em>Session</em></a>) – <code class="docutils literal notranslate"><span class="pre">Session</span></code> object</p></li>
+<li><p><strong>network</strong> (<a class="reference internal" href="denest.html#denest.Network" title="denest.Network"><em>Network</em></a>) – <code class="docutils literal notranslate"><span class="pre">Network</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.reset">
+<em class="property">static </em><code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call <cite>nest.ResetNetwork()</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.shift_stimulator_origin">
+<code class="sig-name descname">shift_stimulator_origin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">network</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.shift_stimulator_origin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set ‘origin’ of all InputLayer devices to start of the session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="denest.html#denest.Session" title="denest.Session"><em>Session</em></a>) – <code class="docutils literal notranslate"><span class="pre">Session</span></code> object</p></li>
+<li><p><strong>network</strong> (<a class="reference internal" href="denest.html#denest.Network" title="denest.Network"><em>Network</em></a>) – <code class="docutils literal notranslate"><span class="pre">Network</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.inactivate_recorders">
+<code class="sig-name descname">inactivate_recorders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">network</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.inactivate_recorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set ‘start’ of all (<a href="#id1"><span class="problematic" id="id2">projection_</span></a>)recorders at the end of session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="denest.html#denest.Session" title="denest.Session"><em>Session</em></a>) – <code class="docutils literal notranslate"><span class="pre">Session</span></code> object</p></li>
+<li><p><strong>network</strong> (<a class="reference internal" href="denest.html#denest.Network" title="denest.Network"><em>Network</em></a>) – <code class="docutils literal notranslate"><span class="pre">Network</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">network</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize and run session.</p>
+<dl class="simple">
+<dt>Session initialization consists in the following steps:</dt><dd><ol class="arabic simple">
+<li><p>Reset Network (<cite>reset_network</cite> parameter)</p></li>
+<li><p>Inactivate recorders (<cite>record</cite> parameter)</p></li>
+<li><dl class="simple">
+<dt>Shift stimulator devices ‘origin’ flag to start of session</dt><dd><p>(<cite>shift_origin</cite> parameter)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Change network’s dynamic variables by calling the</dt><dd><p><cite>Network.set_state</cite> function (<cite>unit_changes</cite> and
+<cite>synapse_changes</cite> parameter)</p>
+</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+<p>After initialization, the simulation is run for <cite>self.simulation_time</cite>
+msec</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="denest.html#denest.Session" title="denest.Session"><em>Session</em></a>) – <code class="docutils literal notranslate"><span class="pre">Session</span></code> object</p></li>
+<li><p><strong>network</strong> (<a class="reference internal" href="denest.html#denest.Network" title="denest.Network"><em>Network</em></a>) – <code class="docutils literal notranslate"><span class="pre">Network</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.session.Session.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save session metadata.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.session.Session.simulation_time">
+<em class="property">property </em><code class="sig-name descname">simulation_time</code><a class="headerlink" href="#denest.session.Session.simulation_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.simulation.html" class="btn btn-neutral float-right" title="denest.simulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.parameters.html" class="btn btn-neutral float-left" title="denest.parameters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

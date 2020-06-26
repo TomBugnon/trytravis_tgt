@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.utils.validation &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="denest.utils.spike_times" href="denest.utils.spike_times.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+          <li><a href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.utils.validation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.utils.validation">
+<span id="denest-utils-validation"></span><h1><a class="reference internal" href="#module-denest.utils.validation" title="denest.utils.validation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a><a class="headerlink" href="#module-denest.utils.validation" title="Permalink to this headline">¶</a></h1>
+<p>Validation and update of parameters dictionaries.</p>
+<dl class="py exception">
+<dt id="denest.utils.validation.ParameterError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">ParameterError</code><a class="headerlink" href="#denest.utils.validation.ParameterError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+<p>Raised when there is an error with parameters</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="denest.utils.validation.ReservedParameterError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">ReservedParameterError</code><a class="headerlink" href="#denest.utils.validation.ReservedParameterError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.utils.validation.ParameterError" title="denest.utils.validation.ParameterError"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.utils.validation.ParameterError</span></code></a></p>
+<p>Raised when parameter dictionary contains a reserved parameter.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="denest.utils.validation.MissingParameterError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">MissingParameterError</code><a class="headerlink" href="#denest.utils.validation.MissingParameterError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.utils.validation.ParameterError" title="denest.utils.validation.ParameterError"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.utils.validation.ParameterError</span></code></a></p>
+<p>Raised when a mandatory parameter is missing.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="denest.utils.validation.UnrecognizedParameterError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">UnrecognizedParameterError</code><a class="headerlink" href="#denest.utils.validation.UnrecognizedParameterError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.utils.validation.ParameterError" title="denest.utils.validation.ParameterError"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.utils.validation.ParameterError</span></code></a></p>
+<p>Raised when a parameter is not recognized.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="denest.utils.validation.MissingChildNodeError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">MissingChildNodeError</code><a class="headerlink" href="#denest.utils.validation.MissingChildNodeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+<p>Raised when a child <cite>Params</cite> node is missing.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="denest.utils.validation.UnrecognizedChildNodeError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">UnrecognizedChildNodeError</code><a class="headerlink" href="#denest.utils.validation.UnrecognizedChildNodeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+<p>Raised when a child <cite>Params</cite> node is not recognized.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="denest.utils.validation.validate_children">
+<code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">validate_children</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em>, <em class="sig-param"><span class="n">mandatory_children</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">optional_children</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.utils.validation.validate_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a <cite>ParamsTree</cite> node children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tree</strong> (<a class="reference internal" href="denest.html#denest.ParamsTree" title="denest.ParamsTree"><em>ParamsTree</em></a>) – The tree we’re validating. Missing children are added
+in place as empty ParamsTree nodes.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>mandatory_children (list(str) | None): <code class="docutils literal notranslate"><span class="pre">None</span></code> or the list of names of</dt><dd><p>children nodes that are expected in the tree. Ignored if
+<code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt>optional_children (list(str) | None): <code class="docutils literal notranslate"><span class="pre">None</span></code> or the list of names of</dt><dd><p>children nodes that are optional in the tree. Ignored if
+<code class="docutils literal notranslate"><span class="pre">None</span></code>. If missing, empty children ParamsTree are added in place.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="denest.utils.validation.validate">
+<code class="sig-prename descclassname">denest.utils.validation.</code><code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">param_type</span><span class="o">=</span><span class="default_value">'params'</span></em>, <em class="sig-param"><span class="n">reserved</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mandatory</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">optional</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.utils.validation.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate and set default values for parameter dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the object we’re validating</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – Parameter dictionary to validate.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>param_type (str): Type of parameter dictionary we’re validating.</dt><dd><p>‘params’ or ‘nest_params’</p>
+</dd>
+<dt>reserved (list(str) | None): List of “reserved” parameters that</dt><dd><p>shouldn’t be present in <code class="docutils literal notranslate"><span class="pre">params</span></code>. Ignored if None.</p>
+</dd>
+<dt>mandatory (list(str) | None): List of parameters that are</dt><dd><p>expected in the dictionary. Ignored if <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt>optional (dict | None): Dict of parameters that are</dt><dd><p>recognized but optional, along with their default value. Ignored if
+<code class="docutils literal notranslate"><span class="pre">None</span></code>. If not None, the list of recognized parameters is
+<code class="docutils literal notranslate"><span class="pre">mandatory</span> <span class="pre">+</span> <span class="pre">optional</span></code> and we throw an error if one
+of the params is not recognized. Optional parameters missing from
+<cite>params</cite> are added along with their default value.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The parameter dictionary updated with default values.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>params</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="denest.utils.spike_times.html" class="btn btn-neutral float-left" title="denest.utils.spike_times" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

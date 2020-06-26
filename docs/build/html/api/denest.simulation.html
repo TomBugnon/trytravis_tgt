@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.simulation &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.utils" href="denest.utils.html" />
+    <link rel="prev" title="denest.session" href="denest.session.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.simulation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.simulation">
+<span id="denest-simulation"></span><h1><a class="reference internal" href="#module-denest.simulation" title="denest.simulation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a><a class="headerlink" href="#module-denest.simulation" title="Permalink to this headline">¶</a></h1>
+<p>Provides the <code class="docutils literal notranslate"><span class="pre">Simulation</span></code> class.</p>
+<dl class="py class">
+<dt id="denest.simulation.Simulation">
+<em class="property">class </em><code class="sig-prename descclassname">denest.simulation.</code><code class="sig-name descname">Simulation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input_dir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">output_dir</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents a simulation.</p>
+<p>Handles building the network, running it with a series of sessions, and
+saving output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tree</strong> (<a class="reference internal" href="denest.html#denest.ParamsTree" title="denest.ParamsTree"><em>ParamsTree</em></a>) – <p>Full simulation parameter tree. The following
+<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> subtrees are expected:</p>
+<blockquote>
+<div><ul>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">simulation</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Defines input and output</dt><dd><p>paths, and the simulation steps performed. The following
+parameters (<cite>params</cite> field) are recognized:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">output_dir</span></code> (str): Path to the output directory</dt><dd><p>(default ‘output’).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">input_dir</span></code> (str): Path to the directory in which</dt><dd><p>input files are searched for for each session.
+(default ‘input’)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sessions</span></code> (list(str)): Order in which sessions are</dt><dd><p>run. Elements of the list should be the name of
+session models defined in the <code class="docutils literal notranslate"><span class="pre">session_models</span></code>
+parameter subtree (default [])</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">kernel</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>): Used for NEST kernel</dt><dd><p>initialization. Refer to <code class="docutils literal notranslate"><span class="pre">Simulation.init_kernel</span></code> for a
+description of kernel parameters.</p>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">session_models</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>): Parameter tree, the
+leaves of which define session models. Refer to <code class="docutils literal notranslate"><span class="pre">Sessions</span></code>
+for a description of session parameters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>): Parameter tree defining the
+network in NEST. Refer to <cite>Network</cite> for a full description of
+network parameters.</p></li>
+</ul>
+</div></blockquote>
+</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>input_dir (str | None): None or the path to the input. If defined,</dt><dd><p>overrides the <cite>input_dir</cite> simulation parameter</p>
+</dd>
+<dt>output_dir (str | None): None or the path to the output directory. If</dt><dd><p>defined, overrides <cite>output_dir</cite> simulation parameter.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Initialize simulation.</p>
+<ul class="simple">
+<li><p>Set input and output paths</p></li>
+<li><p>Initialize NEST kernel and set python seed</p></li>
+<li><p>Initialize and build Network in NEST,</p></li>
+<li><p>Create sessions</p></li>
+<li><p>Save simulation metadata</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="denest.simulation.Simulation.MANDATORY_CHILDREN">
+<code class="sig-name descname">MANDATORY_CHILDREN</code><em class="property"> = []</em><a class="headerlink" href="#denest.simulation.Simulation.MANDATORY_CHILDREN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.simulation.Simulation.OPTIONAL_CHILDREN">
+<code class="sig-name descname">OPTIONAL_CHILDREN</code><em class="property"> = ['kernel', 'simulation', 'session_models', 'network']</em><a class="headerlink" href="#denest.simulation.Simulation.OPTIONAL_CHILDREN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.simulation.Simulation.MANDATORY_SIM_PARAMS">
+<code class="sig-name descname">MANDATORY_SIM_PARAMS</code><em class="property"> = []</em><a class="headerlink" href="#denest.simulation.Simulation.MANDATORY_SIM_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.simulation.Simulation.OPTIONAL_SIM_PARAMS">
+<code class="sig-name descname">OPTIONAL_SIM_PARAMS</code><em class="property"> = {'input_dir': 'input', 'output_dir': 'output', 'sessions': []}</em><a class="headerlink" href="#denest.simulation.Simulation.OPTIONAL_SIM_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.create_network">
+<code class="sig-name descname">create_network</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">network_tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.create_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build and create network.</p>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">network_tree</span></code> as <code class="docutils literal notranslate"><span class="pre">network</span></code> child of <code class="docutils literal notranslate"><span class="pre">self.tree</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clear_output_dir</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save simulation metadata.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Save parameters</p></li>
+<li><p>Save deNEST git hash</p></li>
+<li><p>Save sessions metadata (<cite>Session.save_metadata</cite>)</p></li>
+<li><p>Save session times (start and end kernel time for each session)</p></li>
+<li><p>Save network metadata (<cite>Network.save_metadata</cite>)</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>clear_output_dir (bool): If true, we delete the files preexisting in</dt><dd><p>the directories where data might be saved.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run simulation.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Run sessions in the order specified by the <cite>sessions</cite> simulation</dt><dd><p>parameter</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.build_sessions">
+<code class="sig-name descname">build_sessions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sessions_order</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.build_sessions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a list of sessions.</p>
+<p>Session params are inherited from session models.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.build_session_models">
+<code class="sig-name descname">build_session_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.build_session_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create session models from the leaves of a tree.</p>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">tree</span></code> as <code class="docutils literal notranslate"><span class="pre">session_models</span></code> child of <code class="docutils literal notranslate"><span class="pre">self.tree</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.init_kernel">
+<code class="sig-name descname">init_kernel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kernel_tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.init_kernel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize NEST kernel and set Python seed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Call <code class="docutils literal notranslate"><span class="pre">nest.SetKernelStatus</span></code> with <code class="docutils literal notranslate"><span class="pre">nest_params</span></code></p></li>
+<li><p>Set NEST kernel <code class="docutils literal notranslate"><span class="pre">data_path</span></code> and seed</p></li>
+<li><p>Set Python rng seed for <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code> packages</p></li>
+<li><p>Install extension modules</p></li>
+</ul>
+</div></blockquote>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">kernel_tree</span></code> as <code class="docutils literal notranslate"><span class="pre">kernel</span></code> child of <code class="docutils literal notranslate"><span class="pre">self.tree</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>kernel_tree</strong> (<a class="reference internal" href="denest.html#denest.ParamsTree" title="denest.ParamsTree"><em>ParamsTree</em></a>) – <p>Parameter tree without children. The
+following parameters (<code class="docutils literal notranslate"><span class="pre">params</span></code> field) are recognized:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>extension_modules (list(str)): List of modules to install.</dt><dd><p>(default [])</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>nest_seed (int): Used to set NEST kernel’s rng seed</dt><dd><p>(default 1)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>python_seed (int): Seed in Python <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code></dt><dd><p>packages. (default 1)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p>nest parameters (<code class="docutils literal notranslate"><span class="pre">nest_params</span></code> field) are passed to
+<code class="docutils literal notranslate"><span class="pre">nest.SetKernelStatus</span></code>. The following nest parameters are
+reserved: <code class="docutils literal notranslate"><span class="pre">[data_path,</span> <span class="pre">'grng_seed',</span> <span class="pre">'rng_seed']</span></code>. The NEST
+seeds should be set via the <code class="docutils literal notranslate"><span class="pre">nest_seed</span></code> kernel parameter
+parameter.</p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.total_time">
+<em class="property">static </em><code class="sig-name descname">total_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.total_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the NEST kernel time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.simulation.Simulation.install_module">
+<em class="property">static </em><code class="sig-name descname">install_module</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.simulation.Simulation.install_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Install module in NEST using nest.Install() and catch errors.</p>
+<p>Even after resetting the kernel, NEST throws a NESTError (rather than a)
+warning when the module is already loaded. I (Tom) couldn’t find a way
+to test whether the module is already installed so this function catches
+the error if the module is already installed by matching the error
+message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>module_name</strong> (<em>str</em>) – Name of the module.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.utils.html" class="btn btn-neutral float-right" title="denest.utils" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.session.html" class="btn btn-neutral float-left" title="denest.session" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

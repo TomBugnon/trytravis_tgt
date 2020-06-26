@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.network.layers &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.network.models" href="denest.network.models.html" />
+    <link rel="prev" title="denest.network.projections" href="denest.network.projections.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+          <li><a href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.network.layers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.network.layers">
+<span id="denest-network-layers"></span><h1><a class="reference internal" href="#module-denest.network.layers" title="denest.network.layers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a><a class="headerlink" href="#module-denest.network.layers" title="Permalink to this headline">¶</a></h1>
+<p>Layer objects.</p>
+<dl class="py class">
+<dt id="denest.network.layers.AbstractLayer">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.layers.</code><code class="sig-name descname">AbstractLayer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="denest.base_object.html#denest.base_object.NestObject" title="denest.base_object.NestObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.base_object.NestObject</span></code></a></p>
+<p>Abstract base class for a layer.</p>
+<p>Defines the layer interface.</p>
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the layer in NEST.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.populations">
+<em class="property">property </em><code class="sig-name descname">populations</code><a class="headerlink" href="#denest.network.layers.AbstractLayer.populations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <code class="docutils literal notranslate"><span class="pre">{&lt;population_name&gt;:</span> <span class="pre">&lt;number_units&gt;}</span></code> dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.layer_shape">
+<em class="property">property </em><code class="sig-name descname">layer_shape</code><a class="headerlink" href="#denest.network.layers.AbstractLayer.layer_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return shape of the layer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.population_shape">
+<em class="property">property </em><code class="sig-name descname">population_shape</code><a class="headerlink" href="#denest.network.layers.AbstractLayer.population_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return shape of a population = layer_shape + (pop_n_units,)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.gid">
+<em class="property">property </em><code class="sig-name descname">gid</code><a class="headerlink" href="#denest.network.layers.AbstractLayer.gid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the NEST global ID (GID) of the layer object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.gids">
+<code class="sig-name descname">gids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">population</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">population_location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer.gids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return element GIDs, optionally filtered by population/location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>population</strong> (<em>str</em>) – Matches population name that has <code class="docutils literal notranslate"><span class="pre">population</span></code> as
+a substring.</p></li>
+<li><p><strong>location</strong> (<em>tuple</em><em>[</em><em>int</em><em>]</em>) – The location within the layer to filter
+by.</p></li>
+<li><p><strong>population_location</strong> (<em>tuple</em><em>[</em><em>int</em><em>]</em>) – The location within the population
+to filter by.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The GID(s).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.change_unit_states">
+<code class="sig-name descname">change_unit_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">changes_dict</span></em>, <em class="sig-param"><span class="n">population</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">proportion</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">change_type</span><span class="o">=</span><span class="default_value">'constant'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer.change_unit_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set parameters for some units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>changes_dict</strong> (<em>dict</em>) – <p>Dictionary specifying changes applied to
+selected units, of the form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="o">&lt;</span><span class="n">param_1</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">change_value_1</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="o">&lt;</span><span class="n">param_2</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">change_value_2</span><span class="o">&gt;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The values are set multiplicatively or without modification
+depending on the <code class="docutils literal notranslate"><span class="pre">change_type</span></code> parameter.</p>
+</p></li>
+<li><p><strong>population</strong> (<em>str | None</em>) – Name of population from which we select
+units. All layer’s populations if None.</p></li>
+<li><p><strong>proportion</strong> (<em>float</em>) – Proportion of candidate units to which the
+changes are applied. (default 1.0)</p></li>
+<li><p><strong>change_type</strong> (<em>str</em>) – ‘constant’ (default) or ‘multiplicative’.
+Specifies how parameter values are set from <code class="docutils literal notranslate"><span class="pre">change_dict</span></code>. If
+“constant”, the values in <code class="docutils literal notranslate"><span class="pre">change_dict</span></code> are set to the
+corresponding parameters without modification. If
+“multiplicative”, the values in <code class="docutils literal notranslate"><span class="pre">change_dict</span></code> are multiplied
+to the current value of the corresponding parameter for each
+unit.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the state of some of the layer’s populations.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.AbstractLayer.set_unit_state">
+<em class="property">static </em><code class="sig-name descname">set_unit_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gids</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">change_type</span><span class="o">=</span><span class="default_value">'constant'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.AbstractLayer.set_unit_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change some units’  parameter in NEST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gids</strong> (<em>list</em><em>(</em><em>int</em><em>)</em>) – Gids of units to change the state of</p></li>
+<li><p><strong>params</strong> (<em>dict</em>) – <code class="docutils literal notranslate"><span class="pre">{param_name:</span> <span class="pre">param_change}</span></code> dictionary describing
+the modified parameters. The <cite>param_change</cite> values used for
+modification are set directly or added/multiplied to the current
+value of the parameter for each unit, depending on the
+<code class="docutils literal notranslate"><span class="pre">'change_type'</span></code> kwarg</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>change_type (‘constant’, ‘multiplicative’ or ‘additive’). If</dt><dd><p>‘multiplicative’ (resp. ‘additive’), the set value for each unit
+and each parameter is the product (resp. sum) between the
+preexisting value and the given value. If ‘constant’, the given
+value for each unit is set without regard for the preexisting
+value. (default: ‘constant’)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.layers.Layer">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.layers.</code><code class="sig-name descname">Layer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.layers.AbstractLayer" title="denest.network.layers.AbstractLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.layers.AbstractLayer</span></code></a></p>
+<p>Represents a NEST layer composed of populations of units</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the layer</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <p>Dictionary of parameters. The following parameters
+are expected:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>populations (dict): Dictionary of the form <a href="#id1"><span class="problematic" id="id2">``</span></a>{&lt;model&gt;: &lt;number&gt;}</dt><dd><p>specifying the elements within the layer. Analogous to the
+<code class="docutils literal notranslate"><span class="pre">elements</span></code> nest.Topology parameter</p>
+</dd>
+</dl>
+</div></blockquote>
+</p></li>
+<li><p><strong>nest_params</strong> (<em>dict-like</em>) – Dictionary of parameters that will be passed
+to NEST during the <code class="docutils literal notranslate"><span class="pre">nest.CreateLayer</span></code> call. The following
+parameters are mandatory: <code class="docutils literal notranslate"><span class="pre">['rows',</span> <span class="pre">'columns']</span></code>. The
+<code class="docutils literal notranslate"><span class="pre">elements</span></code> parameter is reserved. Please use the <code class="docutils literal notranslate"><span class="pre">populations</span></code>
+parameter instead to specify layer elements.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.RESERVED_PARAMS">
+<code class="sig-name descname">RESERVED_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.layers.Layer.RESERVED_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.MANDATORY_PARAMS">
+<code class="sig-name descname">MANDATORY_PARAMS</code><em class="property"> = ['populations']</em><a class="headerlink" href="#denest.network.layers.Layer.MANDATORY_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.OPTIONAL_PARAMS">
+<code class="sig-name descname">OPTIONAL_PARAMS</code><em class="property"> = {'type': None}</em><a class="headerlink" href="#denest.network.layers.Layer.OPTIONAL_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.RESERVED_NEST_PARAMS">
+<code class="sig-name descname">RESERVED_NEST_PARAMS</code><em class="property"> = ['elements']</em><a class="headerlink" href="#denest.network.layers.Layer.RESERVED_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.MANDATORY_NEST_PARAMS">
+<code class="sig-name descname">MANDATORY_NEST_PARAMS</code><em class="property"> = ['rows', 'columns']</em><a class="headerlink" href="#denest.network.layers.Layer.MANDATORY_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.Layer.OPTIONAL_NEST_PARAMS">
+<code class="sig-name descname">OPTIONAL_NEST_PARAMS</code><em class="property"> = None</em><a class="headerlink" href="#denest.network.layers.Layer.OPTIONAL_NEST_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.Layer.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the layer in NEST and update attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.gids">
+<code class="sig-name descname">gids</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.Layer.gids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return element GIDs, optionally filtered by population/location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>population</strong> (<em>str</em>) – Matches population name that has <code class="docutils literal notranslate"><span class="pre">population</span></code> as
+a substring.</p></li>
+<li><p><strong>location</strong> (<em>tuple</em><em>[</em><em>int</em><em>]</em>) – The location within the layer to filter
+by.</p></li>
+<li><p><strong>population_location</strong> (<em>tuple</em><em>[</em><em>int</em><em>]</em>) – The location within the population
+to filter by.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The GID(s).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.shape">
+<em class="property">property </em><code class="sig-name descname">shape</code><a class="headerlink" href="#denest.network.layers.Layer.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return layer shape (eg <code class="docutils literal notranslate"><span class="pre">(nrows,</span> <span class="pre">ncols)</span></code>)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.layer_shape">
+<em class="property">property </em><code class="sig-name descname">layer_shape</code><a class="headerlink" href="#denest.network.layers.Layer.layer_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return layer shape (eg <code class="docutils literal notranslate"><span class="pre">(nrows,</span> <span class="pre">ncols)</span></code>)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.population_shapes">
+<em class="property">property </em><code class="sig-name descname">population_shapes</code><a class="headerlink" href="#denest.network.layers.Layer.population_shapes" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">{&lt;pop_name&gt;:</span> <span class="pre">(nrows,</span> <span class="pre">ncols,</span> <span class="pre">nunits)</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Return population shapes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.locations">
+<em class="property">property </em><code class="sig-name descname">locations</code><a class="headerlink" href="#denest.network.layers.Layer.locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <code class="docutils literal notranslate"><span class="pre">{&lt;gid&gt;:</span> <span class="pre">index}</span></code> dict of locations within the layer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.population_locations">
+<em class="property">property </em><code class="sig-name descname">population_locations</code><a class="headerlink" href="#denest.network.layers.Layer.population_locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <code class="docutils literal notranslate"><span class="pre">{&lt;gid&gt;:</span> <span class="pre">index}</span></code> dict of locations within the population.</p>
+<p>There’s an extra (last) dimension for the population locations compared
+to the [layer] locations, corresponding to the index of the unit within
+the population.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.position">
+<code class="sig-name descname">position</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.Layer.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>staticmethod(function) -&gt; method</p>
+<p>Convert a function to be a static method.</p>
+<p>A static method does not receive an implicit first argument.
+To declare a static method, use this idiom:</p>
+<blockquote>
+<div><dl>
+<dt>class C:</dt><dd><p>&#64;staticmethod
+def f(arg1, arg2, …):</p>
+<blockquote>
+<div><p>…</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<p>It can be called either on the class (e.g. C.f()) or on an instance
+(e.g. C().f()).  The instance is ignored except for its class.</p>
+<p>Static methods in Python are similar to those found in Java or C++.
+For a more advanced concept, see the classmethod builtin.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.population_names">
+<em class="property">property </em><code class="sig-name descname">population_names</code><a class="headerlink" href="#denest.network.layers.Layer.population_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of population names within this layer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.Layer.recordable_population_names">
+<em class="property">property </em><code class="sig-name descname">recordable_population_names</code><a class="headerlink" href="#denest.network.layers.Layer.recordable_population_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of names of recordable population names in this layer.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.network.layers.InputLayer">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.layers.</code><code class="sig-name descname">InputLayer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="n">nest_params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.InputLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#denest.network.layers.Layer" title="denest.network.layers.Layer"><code class="xref py py-class docutils literal notranslate"><span class="pre">denest.network.layers.Layer</span></code></a></p>
+<p>A layer of stimulators</p>
+<p><code class="docutils literal notranslate"><span class="pre">InputLayer</span></code> extends the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> class to handle layers of stimulation
+devices. <cite>InputLayer</cite> parameters should specify a single population of
+stimulation devices.</p>
+<p>If the <cite>add_parrot</cite> layer parameter is True (default True), a second
+population of parrot neurons, with the same number of units, will be created
+and connected one-to-one to the population of stimulators, to allow
+recording of activity in the layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the layer</p></li>
+<li><p><strong>params</strong> (<em>dict-like</em>) – <p>Dictionary of parameters. The following parameters
+are expected:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>populations (dict): Dictionary of the form <a href="#id3"><span class="problematic" id="id4">``</span></a>{&lt;model&gt;: &lt;number&gt;}</dt><dd><p>specifying the elements within the layer. Analogous to the
+<code class="docutils literal notranslate"><span class="pre">elements</span></code> nest.Topology parameter</p>
+</dd>
+</dl>
+</div></blockquote>
+</p></li>
+<li><p><strong>nest_params</strong> (<em>dict-like</em>) – Dictionary of parameters that will be passed
+to NEST during the <code class="docutils literal notranslate"><span class="pre">nest.CreateLayer</span></code> call. The following
+parameters are mandatory: <code class="docutils literal notranslate"><span class="pre">['rows',</span> <span class="pre">'columns']</span></code>. The
+<code class="docutils literal notranslate"><span class="pre">elements</span></code> parameter is reserved. Please use the <code class="docutils literal notranslate"><span class="pre">populations</span></code>
+parameter instead to specify layer elements.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.network.layers.InputLayer.OPTIONAL_PARAMS">
+<code class="sig-name descname">OPTIONAL_PARAMS</code><em class="property"> = {'add_parrots': True, 'type': 'InputLayer'}</em><a class="headerlink" href="#denest.network.layers.InputLayer.OPTIONAL_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.layers.InputLayer.PARROT_MODEL">
+<code class="sig-name descname">PARROT_MODEL</code><em class="property"> = 'parrot_neuron'</em><a class="headerlink" href="#denest.network.layers.InputLayer.PARROT_MODEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.InputLayer.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.layers.InputLayer.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the layer and connect the stimulator and parrot populations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.layers.InputLayer.recordable_population_names">
+<em class="property">property </em><code class="sig-name descname">recordable_population_names</code><a class="headerlink" href="#denest.network.layers.InputLayer.recordable_population_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of names of recordable population names in this layer.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.network.models.html" class="btn btn-neutral float-right" title="denest.network.models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.network.projections.html" class="btn btn-neutral float-left" title="denest.network.projections" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

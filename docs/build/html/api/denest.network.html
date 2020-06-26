@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.network &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.network.projections" href="denest.network.projections.html" />
+    <link rel="prev" title="denest.io.save" href="denest.io.save.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.parameters.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.network.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="denest-network">
+<h1><a class="reference internal" href="#module-denest.network" title="denest.network"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a><a class="headerlink" href="#denest-network" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+</ul>
+</div>
+<span class="target" id="module-denest.network"></span><p>Provide a class to construct a network.</p>
+<dl class="py class">
+<dt id="denest.network.Network">
+<em class="property">class </em><code class="sig-prename descclassname">denest.network.</code><code class="sig-name descname">Network</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represent a full network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tree</strong> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – <p>“network” parameter tree. The following
+<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> children are expected:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">neuron_models</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Parameter tree, the leaves</dt><dd><p>of which define neuron models. Each leave is used to
+initialize a <code class="docutils literal notranslate"><span class="pre">Model</span></code> object</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">synapse_models</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Parameter tree, the</dt><dd><p>leaves of which define synapse models. Each leave is used to
+initialize a <code class="docutils literal notranslate"><span class="pre">SynapseModel</span></code> object</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">layers</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Parameter tree, the leaves of</dt><dd><p>which define layers. Each leave is used to initialize  a
+<code class="docutils literal notranslate"><span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">InputLayer</span></code> object depending on the value of
+their <code class="docutils literal notranslate"><span class="pre">type</span></code> <code class="docutils literal notranslate"><span class="pre">params</span></code> parameter.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">projection_models</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Parameter tree, the</dt><dd><p>leaves of which define projection models. Each leave is used
+to initialize a <code class="docutils literal notranslate"><span class="pre">projectionModel</span></code> object.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">recorder_models</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). Parameter tree, the</dt><dd><p>leaves of which define recorder models. Each leave is used
+to initialize a <code class="docutils literal notranslate"><span class="pre">Model</span></code> object.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">topology</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> object without</dt><dd><p>children, the <code class="docutils literal notranslate"><span class="pre">params</span></code> of which may contain a
+<code class="docutils literal notranslate"><span class="pre">projections</span></code> key specifying all the individual
+population-to-population projections within the network as a
+list. <code class="docutils literal notranslate"><span class="pre">projection</span></code> objects  are created from the
+<code class="docutils literal notranslate"><span class="pre">topology</span></code> <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> object by the
+<code class="docutils literal notranslate"><span class="pre">Network.build_projections</span></code> method. Refer to this method
+for a description of the <code class="docutils literal notranslate"><span class="pre">topology</span></code> parameter.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">recorders</span></code> (<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>). <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> object without</dt><dd><p>children, the <code class="docutils literal notranslate"><span class="pre">params</span></code> of which may contain a
+<code class="docutils literal notranslate"><span class="pre">population_recorders</span></code> and a <code class="docutils literal notranslate"><span class="pre">projection_recorders</span></code> key
+specifying all the network recorders. <code class="docutils literal notranslate"><span class="pre">PopulationRecorder</span></code>
+and <code class="docutils literal notranslate"><span class="pre">projectionRecorder</span></code> objects  are created from the
+<code class="docutils literal notranslate"><span class="pre">recorders</span></code> <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> object by the
+<code class="docutils literal notranslate"><span class="pre">Network.build_recorders</span></code> method. Refer to this
+method for a description of the <code class="docutils literal notranslate"><span class="pre">recorders</span></code> parameter.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</p>
+</dd>
+</dl>
+<p>Initialize the network object without creating it in NEST.</p>
+<dl class="py attribute">
+<dt id="denest.network.Network.MANDATORY_CHILDREN">
+<code class="sig-name descname">MANDATORY_CHILDREN</code><em class="property"> = []</em><a class="headerlink" href="#denest.network.Network.MANDATORY_CHILDREN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.network.Network.OPTIONAL_CHILDREN">
+<code class="sig-name descname">OPTIONAL_CHILDREN</code><em class="property"> = ['neuron_models', 'synapse_models', 'layers', 'projection_models', 'topology', 'recorder_models', 'recorders']</em><a class="headerlink" href="#denest.network.Network.OPTIONAL_CHILDREN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_named_leaves_dict">
+<em class="property">static </em><code class="sig-name descname">build_named_leaves_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">constructor</span></em>, <em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_named_leaves_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct and return as dict all leaves of a tree.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_neuron_models">
+<code class="sig-name descname">build_neuron_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_neuron_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.neuron_models</span></code> from the leaves of a tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – is overriden.</p></li>
+<li><p><strong>tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – which define neuron models. Each leaf is used to initialize a
+<code class="docutils literal notranslate"><span class="pre">Model</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_synapse_models">
+<code class="sig-name descname">build_synapse_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_synapse_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.synapse_models</span></code> from the leaves of a tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – is overriden.</p></li>
+<li><p><strong>tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – which define neuron models. Each leaf is used to initialize a
+<code class="docutils literal notranslate"><span class="pre">SynapseModel</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_recorder_models">
+<code class="sig-name descname">build_recorder_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_recorder_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.recorder_models</span></code> from the leaves of a tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – attribute is overriden.</p></li>
+<li><p><strong>tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – which define neuron models. Each leaf is used to initialize a
+<code class="docutils literal notranslate"><span class="pre">Model</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_layers">
+<code class="sig-name descname">build_layers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.layers</span></code> from the leaves of a tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – overriden.</p></li>
+<li><p><strong>tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – which define layers. Each leaf is used to initialize a
+<code class="docutils literal notranslate"><span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">InputLayer</span></code> objecs depending on the value of
+the <code class="docutils literal notranslate"><span class="pre">type</span></code> parameter.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_projection_models">
+<code class="sig-name descname">build_projection_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_projection_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.projection_models</span></code> from the leaves of a tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – attribute is overriden.</p></li>
+<li><p><strong>tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – which define projection models. Each leaf is used to initialize
+a <code class="docutils literal notranslate"><span class="pre">projectionModel</span></code> object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_projections">
+<code class="sig-name descname">build_projections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">topology_tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_projections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize <code class="docutils literal notranslate"><span class="pre">self.projections</span></code> from <code class="docutils literal notranslate"><span class="pre">topology</span></code> tree.</p>
+<p>Initialize <code class="docutils literal notranslate"><span class="pre">self.projections</span></code> with a list of <code class="docutils literal notranslate"><span class="pre">projection</span></code> objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – Network object</p></li>
+<li><p><strong>topology_tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – <p>Tree-like or ParamsTree
+without children. The parameters of which may contain a
+<code class="docutils literal notranslate"><span class="pre">projections</span></code> parameter entry (default []). THe value of the
+<code class="docutils literal notranslate"><span class="pre">projections</span></code> parameter is a list of items describing the
+projections to be created. Each item must be a <code class="docutils literal notranslate"><span class="pre">dict</span></code> of the
+following form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s1">&#39;projection_model&#39;</span> <span class="p">:</span> <span class="o">&lt;</span><span class="n">projection_model</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;source_layers&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">source_layers_list</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;source_population&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">source_population</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;target_layers&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">target_layers_list</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;target_population&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">target_population</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Where:</dt><dd><ul>
+<li><p>&lt;projection_model&gt; is the name of the projection model.
+projection model are specified in the
+<code class="docutils literal notranslate"><span class="pre">projection_models</span></code> network parameter.</p></li>
+<li><p>&lt;source_layers_list&gt;, &lt;target_layers_list&gt; are lists of
+source and target layer names. Projections are created for
+all source_layer x target layer combinations.</p></li>
+<li><p>&lt;source_population&gt;, &lt;target_population&gt; are <code class="docutils literal notranslate"><span class="pre">None</span></code> or
+the name of source and target populations for the created
+projection. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, all populations in the source or
+target layer are connected.</p></li>
+</ul>
+</dd>
+</dl>
+<p>The <code class="docutils literal notranslate"><span class="pre">(&lt;projection_model_name&gt;,</span> <span class="pre">&lt;source_layer_name&gt;,</span>
+<span class="pre">&lt;source_population_name&gt;,</span> <span class="pre">&lt;target_layer_name&gt;,</span>
+<span class="pre">&lt;target_population_name&gt;)</span></code> tuples fully specify each individual
+projection and should be unique.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.build_recorders">
+<code class="sig-name descname">build_recorders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recorders_tree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.build_recorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize recorders from tree.</p>
+<p>Validates the <code class="docutils literal notranslate"><span class="pre">recorders</span></code> parameter tree and calls
+<code class="docutils literal notranslate"><span class="pre">Network.build_population_recorders</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Network.build_projection_recorders</span></code> to initialize the
+<code class="docutils literal notranslate"><span class="pre">Network.population_recorders</span></code> and <code class="docutils literal notranslate"><span class="pre">Network.projection_recorders</span></code>
+attributes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<code class="docutils literal notranslate"><span class="pre">Network</span></code>) – Network object</p></li>
+<li><p><strong>recorders_tree</strong> (tree-like or <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>) – Tree-like or
+<code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> object without children nor <code class="docutils literal notranslate"><span class="pre">nest_params</span></code>.
+The parameters of which may contain a <code class="docutils literal notranslate"><span class="pre">population_recorders</span></code>
+(default []) and a <code class="docutils literal notranslate"><span class="pre">projection_recorders</span></code> (default []) entry
+specifying the network’s recorders.
+The <code class="docutils literal notranslate"><span class="pre">population_recorders</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_recorders</span></code>
+entries are passed to (respectively)
+<code class="docutils literal notranslate"><span class="pre">Network.build_population_recorders</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Network.build_projection_recorders</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(list(PopulationRecorder), list(projectionRecorder))</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.get_recorders">
+<code class="sig-name descname">get_recorders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recorder_class</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recorder_type</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.get_recorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield all <code class="docutils literal notranslate"><span class="pre">PopulationRecorder</span></code> and <code class="docutils literal notranslate"><span class="pre">projectionRecorder</span></code> objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>recorder_class</strong> (<em>str</em><em> or </em><em>None</em>) – Class of queried recorders.
+“PopulationRecorder”, “projectionRecorder” or None.</p></li>
+<li><p><strong>recorder_type</strong> (<em>str</em><em> or </em><em>None</em>) – Type of queried recorders.
+‘multimeter’, ‘spike_detector’ or ‘projection_recorder’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.get_population_recorders">
+<code class="sig-name descname">get_population_recorders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recorder_type</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.get_population_recorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield <code class="docutils literal notranslate"><span class="pre">PopulationRecorder</span></code> objects of type <code class="docutils literal notranslate"><span class="pre">recorder_type</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.get_projection_recorders">
+<code class="sig-name descname">get_projection_recorders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recorder_type</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.get_projection_recorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield <code class="docutils literal notranslate"><span class="pre">projectionRecorder</span></code> objects of type <code class="docutils literal notranslate"><span class="pre">recorder_type</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.change_synapse_states">
+<em class="property">static </em><code class="sig-name descname">change_synapse_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">synapse_changes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.change_synapse_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change parameters for some projections of a population.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>synapse_changes</strong> (<em>list</em>) – <dl>
+<dt>List of dictionaries each of the form::</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>‘synapse_model’: &lt;synapse_model&gt;,
+‘params’: {&lt;param1&gt;: &lt;value1&gt;}</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>where the dictionary in <code class="docutils literal notranslate"><span class="pre">params</span></code> is passed to nest.SetStatus
+to set the parameters for all projections with synapse model
+<code class="docutils literal notranslate"><span class="pre">&lt;synapse_model&gt;</span></code></p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">unit_changes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">synapse_changes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input_dir</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the state of some units and synapses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>unit_changes</strong> (<em>list</em>) – <p>List of dictionaries specifying the changes
+applied to the networks units:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;layers&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">layer_name_list</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;population&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">pop_name</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;change_type&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">change_type</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;from_array&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">from_array</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="s1">&#39;nest_params&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">&lt;</span><span class="n">param_name</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">param_change</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">&lt;layer_name_list&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;population_name&gt;</span></code> specify
+all the individual populations to which the changes are applied:</p>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;layer_name_list&gt;</span></code> (list(str) | None) is the list of</dt><dd><p>names of the considered layers. If None, the changes may
+be applied to populations from all the layers. (default
+[])</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;population_name&gt;</span></code> (str | None) is the name of the</dt><dd><p>considered population in each layer. If <code class="docutils literal notranslate"><span class="pre">None</span></code>,
+changes are applied to all the populations of each
+considered layer. (default None)</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>and <code class="docutils literal notranslate"><span class="pre">&lt;change_type&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;from_array&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">'nest_params'</span></code>
+specify the changes applied to units from each of those
+populations:</p>
+<blockquote>
+<div><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;change_type&gt;</span></code> (‘constant’, ‘multiplicative’ or</dt><dd><p>’additive’). If ‘multiplicative’ (resp. ‘additive’), the
+set value for each unit and parameter is the product
+(resp. sum) between the preexisting value and the given
+value. If ‘constant’, the given value for each unit is
+set without regard for the preexisting value.  (default:
+‘constant’)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;from_array&gt;</span></code> (bool) specifies how the &lt;param_change&gt;</dt><dd><dl class="simple">
+<dt>value given for each parameter is interpreted:</dt><dd><ul class="simple">
+<li><p>if <code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">param_change</span></code> should be a numpy
+array or the relative path from <code class="docutils literal notranslate"><span class="pre">input_dir</span></code> to a
+numpy array.
+The given or loaded array should have the same
+dimension as the considered population, and its
+values are mapped to the population’s units to set
+the <code class="docutils literal notranslate"><span class="pre">&lt;param_name&gt;</span></code> parameter.</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">False</span></code>, the value in <code class="docutils literal notranslate"><span class="pre">param_change</span></code> is
+used to set the <code class="docutils literal notranslate"><span class="pre">&lt;param_name&gt;</span></code> parameter for all
+the population’s units.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">'nest_params'</span></code> (default {}) is the dictionary specifying</dt><dd><p>the parameter changes applied to the population units.
+Items are the name of the modified NEST parameters
+(<code class="docutils literal notranslate"><span class="pre">&lt;param_name&gt;</span></code>) and the values set
+(<code class="docutils literal notranslate"><span class="pre">&lt;param_change&gt;</span></code>). The <code class="docutils literal notranslate"><span class="pre">&lt;change_type&gt;</span></code> and
+<code class="docutils literal notranslate"><span class="pre">&lt;from_array&gt;</span></code> parameters specify the interpretation
+of the <code class="docutils literal notranslate"><span class="pre">&lt;param_change&gt;</span></code> value.</p>
+</dd>
+</dl>
+</div></blockquote>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>$ # Set the same spike times for all the units of a population of spike
+$ # generators
+$ Network.set_state({
+$     ‘layers’: [‘input_layer’],
+$     ‘population_name’: ‘spike_generator’,
+$     ‘change_type’: ‘constant’,
+$     ‘from_array’: False,
+$     ‘nest_params’: {‘spike_times’: [1.0, 2.0, 3.0]}
+$ })
+$
+$ # Set the voltage from values for multiple 2x2 population of neurons: specify
+$ # the array directly
+$ voltages = np.array([[-70.0, -65.0], [-70.0, -65.0]])
+$ Network.set_state({
+$     ‘layers’: [‘l1’, ‘l2’],
+$     ‘population_name’: None,
+$     ‘change_type’: ‘constant’,
+$     ‘from_array’: True,
+$     ‘nest_params’: {‘V_m’: voltages}
+$ })
+$
+$ # Set the voltage from values for a 2x2 population of neurons: pass
+$ # the path to the array
+$ np.save(voltages, ‘./voltage_change.npy’)
+$ Network.set_state({
+$     ‘layers’: [‘l1’],
+$     ‘population_name’: ‘l1_exc’,
+$     ‘change_type’: ‘constant’,
+$     ‘from_array’: True,
+$     ‘nest_params’: {‘V_m’: ‘./voltage_change.npy’}
+$ })
+$
+$ # Multiply the leak potential by 2 for all the units
+$ Network.set_state({
+$     ‘layers’: [‘l1’],
+$     ‘population_name’: ‘l1_exc’,
+$     ‘change_type’: ‘multiplicative’,
+$     ‘from_array’: False,
+$     ‘nest_params’: {‘g_peak_AMPA’: 2.0}
+$ })</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.save_metadata">
+<code class="sig-name descname">save_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.save_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save network metadata.</p>
+<ul class="simple">
+<li><p>Save recorder metadata</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.print_network_size">
+<em class="property">static </em><code class="sig-name descname">print_network_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.print_network_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.network.Network.populations_by_gids">
+<code class="sig-name descname">populations_by_gids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">layer_type</span><span class="o">=</span><span class="default_value">'Layer'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.network.Network.populations_by_gids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dict of the form <code class="docutils literal notranslate"><span class="pre">{'gid':</span> <span class="pre">(layer_name,</span> <span class="pre">pop_name)}</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.network.projections.html" class="btn btn-neutral float-right" title="denest.network.projections" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.io.save.html" class="btn btn-neutral float-left" title="denest.io.save" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

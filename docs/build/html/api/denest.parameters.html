@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>denest.parameters &mdash; deNEST  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="denest.session" href="denest.session.html" />
+    <link rel="prev" title="denest.network.utils" href="denest.network.utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> deNEST
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.base_object.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.base_object</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.load.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.load</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.io.save.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.io.save</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.projections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.projections</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.layers.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.layers</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.models.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.models</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.recorders.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.recorders</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.network.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.network.utils</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.session.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.session</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.simulation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.simulation</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.autodict.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.autodict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.load_stimulus.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.load_stimulus</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.misc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.misc</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.spike_times.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.spike_times</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="denest.utils.validation.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.utils.validation</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">deNEST</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="denest.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest</span></code></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/denest.parameters.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-denest.parameters">
+<span id="denest-parameters"></span><h1><a class="reference internal" href="#module-denest.parameters" title="denest.parameters"><code class="xref py py-mod docutils literal notranslate"><span class="pre">denest.parameters</span></code></a><a class="headerlink" href="#module-denest.parameters" title="Permalink to this headline">¶</a></h1>
+<p>Provide the <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> class.</p>
+<dl class="py exception">
+<dt id="denest.parameters.InvalidTreeError">
+<em class="property">exception </em><code class="sig-prename descclassname">denest.parameters.</code><code class="sig-name descname">InvalidTreeError</code><a class="headerlink" href="#denest.parameters.InvalidTreeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+<p>Raised when a mapping is not a valid <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.parameters.DeepChainMap">
+<em class="property">class </em><code class="sig-prename descclassname">denest.parameters.</code><code class="sig-name descname">DeepChainMap</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">maps</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.DeepChainMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.ChainMap</span></code></p>
+<p>Variant of ChainMap that allows direct updates to inner scopes.</p>
+<p>Initialize a ChainMap by setting <em>maps</em> to the given mappings.
+If no mappings are provided, a single empty dictionary is used.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="denest.parameters.ParamsTree">
+<em class="property">class </em><code class="sig-prename descclassname">denest.parameters.</code><code class="sig-name descname">ParamsTree</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mapping</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">validate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.UserDict</span></code></p>
+<p>A tree of nodes that inherit and override ancestors’ data.</p>
+<p>A tree is created from a tree-like mapping. The key-value pairs
+containing the node’s data are defined in <code class="docutils literal notranslate"><span class="pre">self.DATA_KEYS</span></code> (<code class="docutils literal notranslate"><span class="pre">params</span></code>
+and <code class="docutils literal notranslate"><span class="pre">nest_params</span></code>). Data is inherited from ancestors for each of those
+keys.
+Note that the order of traversals is undefined.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Keyword Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mapping</strong> (<em>Mapping</em>) – A dictionary-like object that maps names to
+children, but with special key-value pairs containing the node’s
+data. Defaults to an empty dictionary.</p></li>
+<li><p><strong>parent</strong> (<a class="reference internal" href="denest.html#denest.ParamsTree" title="denest.ParamsTree"><em>ParamsTree</em></a>) – The parent tree. Data from each of the data keys is
+inherited from ancestors.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="denest.parameters.ParamsTree.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#denest.parameters.ParamsTree.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str | None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.parameters.ParamsTree.children">
+<code class="sig-name descname">children</code><a class="headerlink" href="#denest.parameters.ParamsTree.children" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary of named children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.parameters.ParamsTree.parent">
+<code class="sig-name descname">parent</code><a class="headerlink" href="#denest.parameters.ParamsTree.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>The parent of this node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>type(self)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.parameters.ParamsTree.data">
+<code class="sig-name descname">data</code><a class="headerlink" href="#denest.parameters.ParamsTree.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary containing the data accessible from this node
+(i.e., the node’s data and that inherited from its parents). Keys
+are values of <code class="docutils literal notranslate"><span class="pre">self.DATA_KEYS</span></code> (<code class="docutils literal notranslate"><span class="pre">'params'</span></code> and
+<code class="docutils literal notranslate"><span class="pre">'nest_params'</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname">params, nest_params</code></dt>
+<dd><p>Contain the node data. Syntactic sugar
+to allow access to the node’s data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="denest.parameters.ParamsTree.DATA_KEYS">
+<code class="sig-name descname">DATA_KEYS</code><em class="property"> = ['params', 'nest_params']</em><a class="headerlink" href="#denest.parameters.ParamsTree.DATA_KEYS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.node_data">
+<em class="property">property </em><code class="sig-name descname">node_data</code><a class="headerlink" href="#denest.parameters.ParamsTree.node_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The data associated with this node (not inherited from parents).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<em class="property">property </em><code class="sig-name descname">parent</code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>This node’s parent. <code class="docutils literal notranslate"><span class="pre">None</span></code> if node is the root.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id1">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>This name of this node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id2">
+<em class="property">property </em><code class="sig-name descname">children</code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary of this node’s children</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.ancestors">
+<code class="sig-name descname">ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of ancestors of this node.</p>
+<p>Doesn’t include self. More recent ancestors appear earlier in the list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.leaves">
+<code class="sig-name descname">leaves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of leaf nodes of the tree.</p>
+<p>Traversal order is not defined. If root is False and there is not
+children, returns an empty list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.named_leaves">
+<code class="sig-name descname">named_leaves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.named_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of <code class="docutils literal notranslate"><span class="pre">(&lt;name&gt;,</span> <span class="pre">&lt;node&gt;)</span></code> tuples for all the leaves.</p>
+<p>Traversal order is not defined. If root is False and there is not
+children, returns an empty list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.merge">
+<em class="property">classmethod </em><code class="sig-name descname">merge</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">trees</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge trees into a new tree. Earlier trees take precedence.</p>
+<p>If a node exists at the same location in more than one tree and these
+nodes have duplicate keys, the values from the nodes in the trees that
+appear earlier in the argument list will take precedence over those
+from later trees.</p>
+<p>Equivalent nodes’ data is merged horizontally before hierarchical
+inheritance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy this <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert this <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code> to a nested dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.read">
+<em class="property">classmethod </em><code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a YAML representation of a tree from disk.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a YAML representation of a tree to disk.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="denest.parameters.ParamsTree.validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mapping</span></em>, <em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#denest.parameters.ParamsTree.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that a mapping is a valid <code class="docutils literal notranslate"><span class="pre">ParamsTree</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="denest.session.html" class="btn btn-neutral float-right" title="denest.session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="denest.network.utils.html" class="btn btn-neutral float-left" title="denest.network.utils" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tom Bugnon and William G. P. Mayner
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
